@@ -27,4 +27,4 @@ deploy:
       username: $USERNAME # Registry username  
       password: $PASSWORD # Registry password
       registry: https://hub.docker.com
-      repository: $USERNAME/hello-fellow
+      repository: $USERNAME/hellofellow
