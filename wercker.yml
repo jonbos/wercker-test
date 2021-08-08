@@ -22,8 +22,9 @@ build:
 deploy:
   steps:
     - internal/docker-push:
-        username: $USERNAME
-        password: $PASSWORD
-        repository: jbosmumo/hello-world
-        registry: https://registry.hub.docker.com
-        entrypoint: "/pipeline/source/app/docker_entrypoint.sh"
+      # specify the image to be pushed - this is the one we created earlier
+      image-name: hello-fellow
+      username: $USERNAME # Registry username  
+      password: $PASSWORD # Registry password
+      registry: https://hub.docker.com
+      repository: $USERNAME/hello-fellow
