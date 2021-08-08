@@ -23,8 +23,7 @@ deploy:
   steps:
     - internal/docker-push:
       # specify the image to be pushed - this is the one we created earlier
-      image-name: hello-fellow
       username: $USERNAME # Registry username  
       password: $PASSWORD # Registry password
-      registry: https://hub.docker.com
+      registry: https://registry.hub.docker.com/v2
       repository: $USERNAME/hellofellow
